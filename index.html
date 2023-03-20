@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--分享此网站时显示的内容：title, img, description, url...-->
+    <meta name="description" content="Just for a simple practice!" />
+    <meta property="og:title" content="The best practice material" />
+    <meta
+      property="og:description"
+      content="You can find the exercise and the solutions in this webpage"
+    />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--used stylesheets-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--used stylesheet for animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Practice One</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav collapsible">
+      <!--即便没有collapsible--expanded,也可在css中定制icon toggler动画效果-->
+      <a aria-label="practice one  homepage" class="logo--link" href="/">
+        <img src="images/logo.svg" alt="The logo of the website" />
+      </a>
+      <svg class="icon icon__menu nav__toggler">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <!--Hero/banner-->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="grid grid--1x2 container">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Wu Dongxue First Practice Webpage</h1>
+          <p class="hero__tagline">Deploy your website in less than 60s.</p>
+          <a href="#" class="btn btn--accent btn--getstarted">Get Started</a>
+        </header>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner@1x.png 1x, images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    <!-- Blocks -->
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Starting at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          placeat quisquam mollitia aliquam magni! Voluptate cum vero illum
+          adipisci nobis?
+        </p>
+      </header>
+      <!-- Input with button -->
+      <div class="input-group">
+        <input
+          aria-label="Domain"
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..."
+        />
+        <div class="btn btn__icon">
+          <svg class="icon icon--search">
+            <use href="images/sprite.svg#search"></use>
+          </svg>
+          <button class="btn btn--search btn--accent">Search</button>
+        </div>
+      </div>
+      <!-- H-List -->
+      <ul class="list grid grid--2x3">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">
+          <!-- Badge -->
+          <span class="badge badge--secondary badge--small">10% off</span>
+        </li>
+        <li class="list__item">Item 3</li>
+        <li class="list__item">Item 4</li>
+        <li class="list__item">Item 5</li>
+        <li class="list__item">Item 6</li>
+      </ul>
+    </section>
+
+    <!-- Grid 1x3 -->
+    <section class="block container block-plans">
+      <div class="grid grid--1x3">
+        <!--2xPlans with card and buttons-->
+        <div class="plan-container">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="paln__price">$24</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--secondary badge--small">20% off</span>
+                <span class="plan__description">Optimal Cloud Experience</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Item 1</li>
+                  <li class="list__item">Item 2</li>
+                  <li class="list__item">Item 3</li>
+                </ul>
+                <button class="btn btn--buynow btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-container">
+          <div class="plan plan--bestseller">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="paln__price">$14</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--primary badge--small">10% off</span>
+                <span class="plan__description">Easy Start on the cloud </span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Item 1</li>
+                  <li class="list__item">Item 2</li>
+                  <li class="list__item">Item 3</li>
+                </ul>
+                <button class="btn btn--buynow btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-container">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="paln__price">$24</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--secondary badge--small">20% off</span>
+                <span class="plan__description">Optimal Cloud Experience</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Item 1</li>
+                  <li class="list__item">Item 2</li>
+                  <li class="list__item">Item 3</li>
+                </ul>
+                <button class="btn btn--buynow btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Grid-4x2, Media objects and Imgs-->
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Host On The Cloud to Keep Growing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, placeat!
+        </p>
+      </header>
+      <div class="grid grid--4x2">
+        <!--1st row-->
+        <div class="media" data-aos="fade-right">
+          <div class="meidia__image icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#easy"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Super Easy to Use</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              ipsam quam, numquam repudiandae aliquam consequatur minus voluptas
+              rerum debitis reprehenderit.
+            </p>
+            <!-- Link -->
+            <a href="#" class="link-arrow">Learn more</a>
+          </div>
+        </div>
+        <picture data-aos="fade-left">
+          <source
+            type="image/webp"
+            srcset="images/easy@1x.webp 1x, images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/easy@1x.jpg 1x, images/easy@2x.jpg 2x"
+          />
+          <img
+            class="feature__images"
+            src="images/easy.jpg"
+            alt="The pic of easy to use"
+          />
+        </picture>
+        <!--2nd row-->
+        <div class="media" data-aos="slide-up">
+          <div class="meidia__image icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#computer"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Simple fast websites</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              ipsam quam, numquam repudiandae aliquam consequatur minus voluptas
+              rerum debitis reprehenderit.
+            </p>
+            <!-- Link -->
+            <a href="#" class="link-arrow">Learn more</a>
+          </div>
+        </div>
+        <picture data-aos="fade-up">
+          <source
+            type="image/webp"
+            srcset="images/fast@1x.webp 1x, images/fast@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/fast@1x.jpg 1x, images/fast@2x.jpg 2x"
+          />
+          <img
+            class="feature__images"
+            src="images/fast.jpg"
+            alt="The pic of easy to use"
+          />
+        </picture>
+        <!--3rd row-->
+        <div class="media">
+          <div class="meidia__image icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#wordpress"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">WordPress made easy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              ipsam quam, numquam repudiandae aliquam consequatur minus voluptas
+              rerum debitis reprehenderit.
+            </p>
+            <!-- Link -->
+            <a href="#" class="link-arrow">Learn more</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/wordpress@1x.jpg 1x, images/wordpress@2x.jpg 2x"
+          />
+          <img
+            class="feature__images"
+            src="images/wordpress.jpg"
+            alt="The pic of easy to use"
+          />
+        </picture>
+        <!--4th row-->
+        <div class="media">
+          <div class="meidia__image icon-container">
+            <svg class="icon icon--primary">
+              <use href="images/sprite.svg#settings"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">24/7 Expert Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              ipsam quam, numquam repudiandae aliquam consequatur minus voluptas
+              rerum debitis reprehenderit.
+            </p>
+            <!-- Link -->
+            <a href="#" class="link-arrow">Learn more</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/support@1x.webp 1x, images/support@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/support@1x.jpg 1x, images/support@2x.jpg 2x"
+          />
+          <img
+            class="feature__images"
+            src="images/support.jpg"
+            alt="The pic of easy to use"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!--Showcase -->
+    <article class="block block--dark block--skewed-right block--showcase">
+      <h2 class="block__heading">User-Friendly Control Panel</h2>
+      <div class="grid grid--1x2 container">
+        <picture class="feature__pic" data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/ipad@1x.webp 1x, images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/ipad@1x.png 1x, images/ipad@2x.png 2x"
+          />
+          <img
+            class="feature__images"
+            src="images/ipad.png"
+            alt="The pic of the ipad"
+          />
+        </picture>
+        <!-- 1st Media Objects (Image+Tesx) -->
+        <ul class="list" data-aos="slide-up">
+          <li class="media">
+            <div class="meidia__image">
+              <svg class="icon icon--primary">
+                <use href="images/sprite.svg#settings"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy Start & Managed Updates</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                ipsam quam, numquam repudiandae aliquam consequatur minus
+                voluptas rerum debitis reprehenderit.
+              </p>
+            </div>
+          </li>
+          <!-- 2nd Media Objects (Image+Tesx) -->
+          <li class="media">
+            <div class="meidia__image">
+              <svg class="icon icon--primary">
+                <use href="images/sprite.svg#growth"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy Start & Managed Updates</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                ipsam quam, numquam repudiandae aliquam consequatur minus
+                voluptas rerum debitis reprehenderit.
+              </p>
+            </div>
+          </li>
+          <!-- 3rd Media Objects (Image+Tesx) -->
+          <li class="media">
+            <div class="meidia__image">
+              <svg class="icon icon--primary">
+                <use href="images/sprite.svg#wordpress"></use>
+              </svg>
+            </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy Start & Managed Updates</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                ipsam quam, numquam repudiandae aliquam consequatur minus
+                voluptas rerum debitis reprehenderit.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Grid-1x2, testimonial-container -->
+    <section class="testimonial-container block container">
+      <h2 class="block__heading">What our Customer are Saying</h2>
+      <p class="block__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat
+        quisquam mollitia aliquam magni! Voluptate cum vero illum adipisci
+        nobis?
+      </p>
+      <div class="testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img
+              class="grid__authorpic"
+              src="images/testimonial.jpg"
+              alt="The profile picutre of the author"
+            />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon">
+                <use href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <!-- Qutes (Similar with Media object) -->
+          <div class="quote-container">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              ipsam quam, numquam repudiandae aliquam consequatur minus voluptas
+              rerum debitis reprehenderit.
+            </p>
+            <footer>
+              <div class="quote__author">
+                <svg class="icon icon--primary icon--line">
+                  <use href="images/sprite.svg#line"></use>
+                </svg>
+                <div class="quote__authorinfo">
+                  <div class="quote__authorname">Author Name</div>
+                  <div class="quote__authorcompany">Company</div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Callout 气泡组件-->
+    <div class="callout callout--primary container">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Ready to Get Start?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+            nemo assumenda nulla nam fugit dolore rem praesentium deleniti
+            magnam ipsa.
+          </p>
+        </div>
+        <a href="#" class="btn btn--getstarted btn--secondary">Get Started</a>
+      </div>
+    </div>
+
+    <!--Footer -->
+    <footer class="block block--dark footer">
+      <!--Collapsible折叠组件-->
+      <div class="grid grid--1x5 container">
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h3 class="collapsible__heading">Item Test 01</h3>
+            <span class="collapsible__arrow nav__toggler">
+              <img src="images/chevron.svg" alt="The arrow of the collapse" />
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="#">Item 1</a></li>
+              <li><a class="list__item" href="#">Item 2</a></li>
+              <li><a class="list__item" href="#">Item 3</a></li>
+              <li><a class="list__item" href="#">Item 4</a></li>
+              <li><a class="list__item" href="#">Item 5</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h3 class="collapsible__heading">Item Test 02</h3>
+            <span class="collapsible__arrow nav__toggler">
+              <img src="images/chevron.svg" alt="The arrow of the collapse" />
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="">Item 1</a></li>
+              <li><a class="list__item" href="">Item 2</a></li>
+              <li><a class="list__item" href="">Item 3</a></li>
+              <li><a class="list__item" href="">Item 4</a></li>
+              <li><a class="list__item" href="">Item 5</a></li>
+              <li><a class="list__item" href="">Item 4</a></li>
+              <li><a class="list__item" href="">Item 7</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h3 class="collapsible__heading">Item Test 03</h3>
+            <span class="collapsible__arrow nav__toggler">
+              <img src="images/chevron.svg" alt="The arrow of the collapse" />
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="">Item 1</a></li>
+              <li><a class="list__item" href="">Item 2</a></li>
+              <li><a class="list__item" href="">Item 3</a></li>
+              <li><a class="list__item" href="">Item 4</a></li>
+              <li><a class="list__item" href="">Item 5</a></li>
+              <li><a class="list__item" href="">Item 6</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h3 class="collapsible__heading">Item Test 04</h3>
+            <span class="collapsible__arrow nav__toggler">
+              <img src="images/chevron.svg" alt="The arrow of the collapse" />
+            </span>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a class="list__item" href="">Item 1</a></li>
+              <li><a class="list__item" href="">Item 2</a></li>
+              <li><a class="list__item" href="">Item 3</a></li>
+              <li><a class="list__item" href="">Item 4</a></li>
+              <li><a class="list__item" href="">Item 5</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__copyright">
+          <img src="images/logo.svg" alt="The logo of the website" />
+          <p>Copyright &copy; 2022 mosh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

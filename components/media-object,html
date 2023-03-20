@@ -1,0 +1,15 @@
+<div class="media">
+  <div class="meidia__image">
+    <svg class="icon icon--primary">
+      <use xlink:href="images/sprite.svg#snap"></use>
+    </svg>
+  </div>
+  <div class="media__body">
+    <h3 class="media__title">Easy Start & Managed Updates</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam
+      quam, numquam repudiandae aliquam consequatur minus voluptas rerum debitis
+      reprehenderit.
+    </p>
+  </div>
+</div>
